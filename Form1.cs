@@ -98,9 +98,49 @@ namespace Modelos_Program_1
             textBox5.Text = objVec1.descargar();
         }
 
+        private void pregunta5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objVec1.elemFrecuente(int.Parse(textBox1.Text), int.Parse(textBox2.Text), ref objVec2, ref objVec3);
+            textBox5.Text = objVec2.descargar();
+            textBox6.Text = objVec3.descargar();
+        }
+
+        private void pregunta6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objVec1.ordenPosiMulti(int.Parse(textBox1.Text));
+            textBox5.Text = objVec1.descargar();
+        }
+
+        private void pregunta7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objVec1.elimRepet();
+            textBox5.Text = objVec1.descargar();
+        }
+
+        private void cargarSinRepetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objVec1.cargarSinRepetir(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));
+        }
+
+        private void cargarSinRepetToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            objVec1.cargarSinRepetir(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));
+        }
+
+        private void cargarSinRepetToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            objVec1.cargarSinRepetir(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));
+        }
+
+        private void pregunta8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objVec1.unionVectores(objVec2, ref objVec3);
+            textBox6.Text = objVec3.descargar();
+        }
+
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            objVec1.cargar(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));
+            objVec1.cargar(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));           
         }
 
         private void Form1_Load(object sender, EventArgs e)
