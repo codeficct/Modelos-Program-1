@@ -314,6 +314,8 @@ namespace Modelos_Program_1
 
         /* Pregunta 8: cargar random 2 vectores "conjuntos" 
            SIN ELEMENTOS REPETIDOS y realizar la union 
+           v {4,7,1,3,2} U v2 {5,3,8,1,4,6} ==> vR {4,7,1,3,2,5,8,6}
+
         */
         public void unionVectores(classVector vec2, ref classVector vecResult)
         {
